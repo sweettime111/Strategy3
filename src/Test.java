@@ -4,9 +4,11 @@ public class Test {
 	public static void main(String[] args) {
 		System.out.println("----MallardDuck-----");
 		MallardDuck md = new MallardDuck();
+		md.setQuackBehavior (new Quack());
+		md.setFlybehavior(new FlyWithRock());
 		md.display();//Look like a mallard
 		md.performQuack();//Quack! Quack!
-		md.performFly();//I'm flying with wing
+		md.performFly(); //I'm flying with wing
 		System.out.println("----RubberDuck-----");
 		
 		RubberDuck rud = new RubberDuck();
